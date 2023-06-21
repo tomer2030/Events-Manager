@@ -1,0 +1,14 @@
+table {
+    margin: 20px auto;
+}
+
+table, th, td {
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+thead {
+    font-weight: bolder;
+    font-size: large;
+}

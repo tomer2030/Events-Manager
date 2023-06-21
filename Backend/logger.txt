@@ -1,0 +1,26 @@
+10.1.2023, 18:52:50 	 EventModel validation failed: invitations: Path `invitations` (15165165) is more than maximum allowed value (1000).
+----------------------------
+10.1.2023, 18:53:03 	 EventModel validation failed: invitations: Path `invitations` (15165165) is more than maximum allowed value (1000).
+----------------------------
+10.1.2023, 18:53:15 	 EventModel validation failed: address: Path `address` (`a`) is shorter than the minimum allowed length (2).
+----------------------------
+10.1.2023, 18:55:05 	 Cannot populate path `typeOfEvent` because it is not in your schema. Set the `strictPopulate` option to false to override.
+----------------------------
+10.1.2023, 18:59:12 	 EventModel validation failed: typeId: Cast to ObjectId failed for value "63bd877816767ca61d75e4c76" (type string) at path "typeId" because of "BSONTypeError"
+----------------------------
+10.1.2023, 19:00:00 	 EventModel validation failed: typeId: Cast to ObjectId failed for value "63bd877816767ca61d75e4c76" (type string) at path "typeId" because of "BSONTypeError"
+----------------------------
+10.1.2023, 19:04:57 	 Route /api/events/type/63bd99011f4101d3d7155395 not exist
+----------------------------
+10.1.2023, 19:05:23 	 Route /api/events/63bd99011f4101d3d7155395 not exist
+----------------------------
+10.1.2023, 19:05:48 	 Route /api/events/63bd99011f4101d3d7155395 not exist
+----------------------------
+10.1.2023, 19:06:23 	 Route /api/events/63bd99011f4101d3d7155395 not exist
+----------------------------
+10.1.2023, 19:07:17 	 Route /api/events/63bd99011f4101d3d7155395 not exist
+----------------------------
+10.1.2023, 19:08:02 	 Route /api/events/63bd99011f4101d3d7155395 not exist
+----------------------------
+10.1.2023, 19:13:03 	 _id 63bd99011f4101d3d7155395 not exist
+----------------------------

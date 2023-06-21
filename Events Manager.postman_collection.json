@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "719c9b5d-8c24-4848-98de-314ee2ef55f5",
+		"name": "Events Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23516161"
+	},
+	"item": [
+		{
+			"name": "Get all events by type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/events/type/63bd877816767ca61d75e4c7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"events",
+						"type",
+						"63bd877816767ca61d75e4c7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/events/type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"events",
+						"type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"typeId\": \"63bd877816767ca61d75e4c7\",\r\n    \"date\": \"2022-08-05T21:00:00.000Z\",\r\n    \"description\": \"friday party\",\r\n    \"address\": \"hamalkosh 10, Gan Yavne\",\r\n    \"invitations\": 700\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/events/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"events",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete event",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/events/63bd99011f4101d3d7155395",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"events",
+						"63bd99011f4101d3d7155395"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

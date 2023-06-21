@@ -1,0 +1,33 @@
+<div>
+    <h2>All Events</h2>
+    <h3>Choose the type:</h3>
+
+    <select (change)="displayEvents($event)">
+        <option selected disabled value="">Select Type Of Event</option>
+        <option *ngFor="let t of types" value={{t._id}}>{{t.type}}</option>
+    </select>
+
+    <table *ngIf="events?.length">
+        <thead>
+            <td>Type Of Event</td>
+            <td>Start Date</td>
+            <td>Description</td>
+            <td>Address</td>
+            <td>Number Of Invitations</td>
+            <td>Already started?</td>
+            <td>Delete Event</td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let e of events">
+                <td>{{e.type.type}}</td>
+                <td>{{e.date | date:" dd/MM/yyyy HH:mm "}}</td>
+                <td>{{e.description}}</td>
+                <td>{{e.address}}</td>
+                <td>{{e.invitations}}</td>
+                <td *ngIf="(itStarted(e.date))">Yes</td>
+                <td *ngIf="(!itStarted(e.date))">No</td>
+                <td><Button (click)="(deleteEvent(e._id))">X</Button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

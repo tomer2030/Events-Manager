@@ -1,0 +1,32 @@
+<div>
+
+    <form (ngSubmit)="send()" ngNativeValidate>
+        <h2>Add New Event</h2>
+        <label>Type Of Event: </label>
+        <select required [(ngModel)]="event.typeId" name="type">
+            <option selected disabled value="">Select Type Of Event</option>
+            <option *ngFor="let t of types" value={{t._id}}>{{t.type}}</option>
+        </select>
+        <br>
+
+        <label>Date: </label>
+        <input type="datetime-local" name="date" [(ngModel)]="event.date" required>
+        <br>
+
+        <label>Description: </label>
+        <input type="text" name="description" [(ngModel)]="event.description" required minlength="2" maxlength="100">
+        <br>
+        
+        <label>Address: </label>
+        <input type="text" name="address" [(ngModel)]="event.address" required minlength="2" maxlength="100">
+        <br>
+        
+        <label>Number of invitations: </label>
+        <input type="number" name="invitations" [(ngModel)]="event.invitations" required min="5" max="1000">
+        <br>
+
+        <button>Add Event</button>
+
+    </form>
+
+</div>
